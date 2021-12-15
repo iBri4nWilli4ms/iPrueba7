@@ -11,5 +11,8 @@
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
 
+# Prueba es eso... una prueba.
+prueba/
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
