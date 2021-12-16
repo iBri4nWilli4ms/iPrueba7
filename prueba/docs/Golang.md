@@ -3,8 +3,10 @@
 Creacion de API con Golang 
 ### Protocolo HTTP/HTTP2
 Es un estandar para las peticiones y respuestas.
+
 - Request
 - Response
+
 ### Arquitectura DDD/REST
 Todo lo que se mueve en internet es un recurso representado por un formato que debe tener un edintificador unico (URIs). Los cuales son accedidos a traves de los metodos estandar http.
 
@@ -13,31 +15,36 @@ Los recursos pueden tener varias representaciones y pueden realizar comunixacion
 Persistencia de informacion entre peteciones sin respuesta (estado) ex. inicio de secion.
 - token
 - cookies
- ### Formatos (XML, JSON, gRPC)
+
+### Formatos (XML, JSON, gRPC)
 Son las formas de representar los recursos desde el backend
 JSON 
 gRPC
- ### Metodos HTTP
- - GET
+
+### Metodos HTTP
+- GET
 - POST
 - PUT
 - PATCH
 - DELETE
 - HEAD
 - OPTIONS
- ### Codigo de Respuesta
+
+### Codigo de Respuesta
  - **1XX** Informativas 
  - **2XX** Exito
  - **3XX** Redireccion
  - **4XX** Error de cliente
  - **5XX** Error de servidor
  - Mayores a **599** respuestas no oficiales en la documentacion.
- ## Paquete HTTP/HTTP2
- ### Paquete Net/HTTP
+
+## Paquete HTTP/HTTP2
+### Paquete Net/HTTP
  Sirve para crear:
- -  Servidores
+ - Servidores
  - Clientes
- ### Servidores y Clientes
+
+### Servidores y Clientes
  - **ServeMux** Sirve como enrutador  para las peticiones HTTP entrantes con una lista de URIs para ejecutar el correspondiente handler.
  - **Handler** Responsable de escribir la respuesta al cliente. Envia la informacion de los encabezados(headers) y el cuerpo (bodles).
  **Handlers predefinidos**
@@ -46,8 +53,9 @@ gRPC
 	 - RedirectHandler
 	 - StripPrefix
 	 - TimeoutHandler
- ### Servidor web estático
- ```go
+
+### Servidor web estático
+``` go
  package main
 
 import (
@@ -62,12 +70,13 @@ func main(){
   log.Println("Servidor Iniciado", puerto)
   http.ListenAndServe(puerto, nil)
 }
- ```
- ### Primer Handler
+```
+ 
+### Primer Handler
  Firma para una funcion Handler:
- ```go
+```go
  func(http.ResponseWriter, *http.Request)
- ```
+```
 funcion `HandleFunc()` de `ServeMux` asi:
 ```go
 package main
@@ -85,7 +94,7 @@ func main(){
  func saludar(w http.ResponseWriter, r *http.Request){
    fmt.Fprintf(w, "Hola mundo")
  }
- ```
+```
 ### Estructura Request
 La estructura `http.Request` contiene informacion de peticion de cliente a un servidor.
 ```
@@ -105,7 +114,8 @@ Metodos
 - FormValue()
 - ParseForm()
 - ParseMultipartForm()
- ### Estructura Response y ResponseWriter
+
+### Estructura Response y ResponseWriter
  Nos permite dar respuesta a una peticion de un cliente.
  ```go
  Status: string
@@ -119,7 +129,7 @@ Metodos
  Write(...): Permite escribir el cuerpo de la repuesta.
  WriteHeader(...): Permite escribir el codigo de estado.
  ```
- ### Estructura Server
+### Estructura Server
  Para personalizar algunas opciones de tu servidor, la estructura `Server` nos ayudara. ***more***
  Campos mas usados:
  ```go
@@ -132,7 +142,7 @@ Metodos
  Error.log: *log.Logger
  ```
  
- ## CRUD de una estrucctura
+## CRUD de una estrucctura
  codigo... 
 - Storage create, update, delete, getbyid and getall
 - Handler create, get all, update and delete
@@ -160,7 +170,8 @@ Generar certificados openssl rsa online generate
 - **Publico** Firmar el token
 `openssl rsa -in app.rsa -pubout > app.rsa.pub` 
 - **Privado** Validar el token
-`openssl genrsa -out app.rsa 1024` 
+`openssl genrsa -out app.rsa 1024`
+
 ### Logica generar y validar token 
 todo el codigo en el ejercicio N3
 ### 

@@ -6,27 +6,26 @@
 
 ## Diseño
 ## Arquitectura
-DDD + Microservicios + GRPC + Clean(Code + Architecture) + GORM 
 
-- Entidades
-- Casos de uso
-- Controladores 
-- Frameworks
-
-- Middleware 
-- Principios solid 
+- DDD
+- Microservicios
+- GRPC
+- Clean (Code + Architecture)
+- GORM 
+- Kit
+- SOLID
 
 ## Tecnologías
 ### [Backend]()
 #### [Go]()
 
-**Middleware**
-**Sandboxing**
-**gRPC**
-**server side rendering SSR**
-**PWA**
+- **Middleware**
+- **Sandboxing**
+- **gRPC**
+- **SSR**
+- **PWA**
 
-**Feature Flags**
+- **Feature Flags**
 
 ### [Frontend]()
 #### [Flutter]()
