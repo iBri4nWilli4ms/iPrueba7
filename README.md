@@ -7,7 +7,10 @@ DESKTOP
 ## Por Aprender
 
 - Kit, el Shared Kernel más gopher
-- 
+-
+
+# Architecture
+[Infrastructure](/infrastructure/README.md)
 
 
 
