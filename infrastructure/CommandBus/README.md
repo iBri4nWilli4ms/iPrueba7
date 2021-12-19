@@ -1,0 +1,3 @@
+# COMMANDBUS
+
+<vendor-adapter>

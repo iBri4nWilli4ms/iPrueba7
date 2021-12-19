@@ -1,4 +1,6 @@
-# CMD || Interface User
+**The user interface**, containing the code adapting a delivery mechanism to a use case.
+
+# CMD || Interface de Usuario
 Contiene todos los puntos de entrada de nuestra aplicación.
 Cada uno de ellos, será un paquete de la carpeta cmd con su respectivo **main.go** además del resto de código necesario como:
 

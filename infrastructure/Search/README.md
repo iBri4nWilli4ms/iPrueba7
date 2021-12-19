@@ -1,0 +1,3 @@
+# SEARCH
+
+<vendor-adapter>
