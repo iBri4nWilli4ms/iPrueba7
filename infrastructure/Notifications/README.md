@@ -1,0 +1,3 @@
+# Notifications
+
+<vendor-adapter>
