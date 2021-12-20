@@ -11,7 +11,7 @@ DESKTOP
 
 # [Init][Init]
 # [Architecture][Architecture]
-[Infrastructure](/infrastructure/README.md)
+![Explicit Architecture][eaimg]
 # [Structure][Structure]
 # [Code][Code]
 # [Documents][Doc]
@@ -28,3 +28,5 @@ DESKTOP
 [Code]: https://github.com/hgraca/explicit-architecture-php/
 
 [Doc]: https://herbertograca.com/2019/08/12/documenting-software-architecture/
+
+[eaimg]: /assets/img/1.ExplicitArchitecture.png
