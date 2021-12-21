@@ -4,6 +4,8 @@ Personal Proyect To Learn
 MOBILE
 DESKTOP
 
+Explicit Architecture
+
 ## Por Aprender
 
 - Kit, el Shared Kernel más gopher
@@ -15,7 +17,6 @@ DESKTOP
 # [Structure][Structure]
 # [Code][Code]
 # [Documents][Doc]
-
 
 
 
