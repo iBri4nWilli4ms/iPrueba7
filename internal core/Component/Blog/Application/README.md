@@ -1,4 +1,4 @@
-# APPLICATION || UseCase
+# APPLICATION
 
 <Listener>
 <Notification>
